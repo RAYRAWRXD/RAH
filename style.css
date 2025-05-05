@@ -47,7 +47,6 @@ body {
 .profile-pic {
     width: 100%;
     border: 3px solid #7cfc00;
-    filter: sepia(70%) contrast(120%);
     margin: 10px 0;
 }
 
