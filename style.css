@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: 'Courier New', monospace;
     overflow-x: hidden;
-    background-color: #ffffff; /* White */
+    background-color: #1a2f1a; /* Deep green */
 }
 
 .background-texture {
@@ -14,7 +14,8 @@ body {
     width: 100%;
     height: 100%;
     background: 
-        url('https://unsplash.com/photos/bed-of-orange-flowers-d4feocYfzAM') center/cover, /* Nature BG */
+        url('https://i.imgur.com/JjQZQ9q.jpg') center/cover, /* Nature BG */
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7));
     z-index: -1;
     opacity: 0.8;
 }
@@ -23,10 +24,9 @@ body {
 .journal {
     display: flex;
     min-height: 100vh;
-    max-height: 800px;
     max-width: 1200px;
     margin: 0 auto;
-    background: rgba(255, 255, 255);
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
@@ -35,7 +35,7 @@ body {
     flex: 1;
     padding: 30px;
     border-right: 2px dashed #3a5f0b;
-    background: rgba(10, 20, 10); 
+    background: rgba(10, 20, 10, 0.7); /* Semi-transparent */
 }
 
 .about-me {
@@ -46,6 +46,7 @@ body {
 .profile-pic {
     width: 100%;
     border: 3px solid #7cfc00;
+    filter: sepia(70%) contrast(120%);
     margin: 10px 0;
 }
 
@@ -53,7 +54,7 @@ body {
 .page-right {
     flex: 2;
     padding: 30px;
-    background: rgba(15, 25, 15);
+    background: rgba(15, 25, 15, 0.6);
 }
 
 .blog-post {
@@ -79,4 +80,14 @@ body {
     border: 2px solid #000;
     float: right;
     shape-outside: circle(50%);
+}
+
+/* === PUNK DETAILS === */
+.blinkie {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.blinkie img {
+    max-width: 150px;
 }
