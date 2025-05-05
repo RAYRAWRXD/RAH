@@ -1,0 +1,121 @@
+/* CRUDE HANDCRAFTED CSS */
+body {
+    background-color: #000;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC');
+    color: #ccc;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #3a5f0b;
+    background-color: #111;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px dashed #3a5f0b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #7cfc00;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0 #3a5f0b;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    color: #8b8;
+    font-style: italic;
+}
+
+.nav {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.nav a {
+    color: #7cfc00;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.post {
+    background-color: #0a0a0a;
+    border-left: 5px solid #3a5f0b;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    color: #7cfc00;
+    margin-top: 0;
+    border-bottom: 1px dotted #3a5f0b;
+    padding-bottom: 5px;
+}
+
+.date {
+    color: #8b8;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+    border-top: 2px dashed #3a5f0b;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+/* PUNK ELEMENTS */
+.alert {
+    background-color: #3a0f0f;
+    border: 1px solid #f00;
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* NATURE ELEMENTS */
+.nature {
+    color: #8b8;
+    font-style: italic;
+}
+
+/* CRUDE DIVIDERS */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(58, 95, 11, 0), rgba(58, 95, 11, 1), rgba(58, 95, 11, 0));
+}
+
+/* UNDER CONSTRUCTION GIF STYLE */
+.construction {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* VISITOR COUNTER */
+.counter {
+    font-family: 'Times New Roman', serif;
+    color: #7cfc00;
+    background-color: #222;
+    padding: 2px 5px;
+    display: inline-block;
+}
