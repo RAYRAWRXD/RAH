@@ -1,221 +1,220 @@
-        body {
-            font-family: 'Dotum', 'Apple Gothic', sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        
-        .container {
-            width: 900px;
-            margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        
-        /* Header */
-        .header {
-            background-color: #ff6699;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        
-        .login-area {
-            position: absolute;
-            right: 15px;
-            top: 15px;
-            font-size: 12px;
-        }
-        
-        /* Navigation */
-        .nav {
-            background-color: #ff99bb;
-            padding: 8px;
-        }
-        
-        .nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .nav li {
-            margin: 0 15px;
-        }
-        
-        .nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        /* Main Content */
-        .main-content {
-            display: flex;
-            padding: 15px;
-        }
-        
-        /* Profile Section */
-        .profile {
-            width: 250px;
-            background-color: #fff9fc;
-            border: 1px solid #ffccdd;
-            padding: 15px;
-            margin-right: 15px;
-        }
-        
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            margin: 0 auto;
-            background-color: #ddd;
-            border: 3px solid #ff99bb;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        
-        .profile-img img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-        
-        .profile-info {
-            margin-top: 15px;
-            text-align: center;
-        }
-        
-        .profile-name {
-            font-weight: bold;
-            font-size: 18px;
-            color: #ff6699;
-        }
-        
-        .profile-stats {
-            display: flex;
-            justify-content: space-around;
-            margin: 15px 0;
-            font-size: 12px;
-        }
-        
-        .profile-stats div {
-            text-align: center;
-        }
-        
-        .profile-stats span {
-            display: block;
-            font-weight: bold;
-            font-size: 16px;
-            color: #ff6699;
-        }
-        
-        /* Main Section */
-        .main-section {
-            flex: 1;
-        }
-        
-        /* Guestbook */
-        .guestbook {
-            border: 1px solid #ffccdd;
-            margin-bottom: 15px;
-        }
-        
-        .guestbook-header {
-            background-color: #ffccdd;
-            padding: 8px;
-            font-weight: bold;
-        }
-        
-        .guestbook-content {
-            padding: 15px;
-            min-height: 100px;
-        }
-        
-        .guestbook-entry {
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            border-bottom: 1px dashed #ffccdd;
-        }
-        
-        .guestbook-form textarea {
-            width: 100%;
-            height: 60px;
-            margin-bottom: 5px;
-            border: 1px solid #ffccdd;
-        }
-        
-        .guestbook-form button {
-            background-color: #ff6699;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-        
-        /* Photo Section */
-        .photo-section {
-            border: 1px solid #ffccdd;
-        }
-        
-        .photo-header {
-            background-color: #ffccdd;
-            padding: 8px;
-            font-weight: bold;
-        }
-        
-        .photo-content {
-            padding: 15px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-        
-        .photo-item {
-            height: 100px;
-            background-color: #eee;
-            border: 1px solid #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        
-        .photo-item img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-        
-        /* Footer */
-        .footer {
-            background-color: #ffccdd;
-            padding: 10px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
-        
-        /* Cyworld signature elements */
-        .acorn {
-            color: #ff9900;
-            font-weight: bold;
-        }
-        
-        .ilchon {
-            color: #3399ff;
-            font-weight: bold;
-        }
+/* Cyworld-inspired CSS */
+body {
+    font-family: 'Dotum', 'Apple Gothic', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
-.blinkie img {
-    max-width: 150px;
+.container {
+    width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header {
+    background-color: #ff6699;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.login-area {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 12px;
+}
+
+/* Navigation */
+.nav {
+    background-color: #ff99bb;
+    padding: 8px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    padding: 15px;
+}
+
+/* Profile Section */
+.profile {
+    width: 250px;
+    background-color: #fff9fc;
+    border: 1px solid #ffccdd;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #ddd;
+    border: 3px solid #ff99bb;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.profile-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff6699;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.profile-stats div {
+    text-align: center;
+}
+
+.profile-stats span {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff6699;
+}
+
+.visitor-count {
+    font-size: 12px;
+}
+
+/* Main Section */
+.main-section {
+    flex: 1;
+}
+
+/* Section Styles */
+.section-header {
+    background-color: #ffccdd;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.section-content {
+    padding: 15px;
+}
+
+/* Guestbook */
+.guestbook {
+    border: 1px solid #ffccdd;
+    margin-bottom: 15px;
+}
+
+.guestbook-entry {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ffccdd;
+}
+
+.guestbook-form textarea {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5px;
+    border: 1px solid #ffccdd;
+}
+
+.guestbook-form button {
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Photo Section */
+.photo-section {
+    border: 1px solid #ffccdd;
+}
+
+.photo-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.photo-item {
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.photo-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Footer */
+.footer {
+    background-color: #ffccdd;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Cyworld signature elements */
+.acorn {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+.ilchon {
+    color: #3399ff;
+    font-weight: bold;
 }
