@@ -1,220 +1,352 @@
-/* Cyworld-inspired CSS */
-body {
-    font-family: 'Dotum', 'Apple Gothic', sans-serif;
-    background-color: #f5f5f5;
+/* Reset and Base Styles */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Container */
 .container {
-    width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 0 15px;
 }
 
 /* Header */
 .header {
-    background-color: #ff6699;
+    background-color: #388E3C; /* Dark green */
     color: white;
-    padding: 15px;
-    text-align: center;
-    position: relative;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.login-area {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    font-size: 12px;
-}
-
-/* Navigation */
-.nav {
-    background-color: #ff99bb;
-    padding: 8px;
-}
-
-.nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 15px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.nav li {
-    margin: 0 15px;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
+.logo h1 {
+    font-size: 24px;
     font-weight: bold;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav li {
+    margin: 0 10px;
+}
+
+.main-nav a {
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #2E7D32;
+}
+
+.main-nav i {
+    margin-right: 5px;
+}
+
+.user-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .signup-btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.signup-btn {
+    background-color: #4CAF50;
+    border: 1px solid #4CAF50;
+}
+
+.signup-btn:hover {
+    background-color: #43A047;
 }
 
 /* Main Content */
 .main-content {
     display: flex;
-    padding: 15px;
+    margin: 20px 0;
+    gap: 20px;
 }
 
-/* Profile Section */
-.profile {
+/* Sidebar */
+.sidebar {
     width: 250px;
-    background-color: #fff9fc;
-    border: 1px solid #ffccdd;
+}
+
+.miniroom, .visitors {
+    background-color: white;
+    border-radius: 8px;
     padding: 15px;
-    margin-right: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    background-color: #ddd;
-    border: 3px solid #ff99bb;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.miniroom h3, .visitors h3 {
+    color: #388E3C;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
 }
 
-.profile-img img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.profile-info {
-    margin-top: 15px;
+.miniroom-display {
     text-align: center;
 }
 
-.profile-name {
-    font-weight: bold;
-    font-size: 18px;
-    color: #ff6699;
+.miniroom-display img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.miniroom-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.miniroom-controls button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.miniroom-controls button:hover {
+    background-color: #388E3C;
+}
+
+.visitor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.visitor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.visitor img {
+    border-radius: 50%;
+}
+
+/* Content Area */
+.content-area {
+    flex: 1;
+}
+
+.profile-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile-avatar img {
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+    margin-right: 20px;
+}
+
+.profile-info h2 {
+    color: #388E3C;
+    margin-bottom: 5px;
+}
+
+.status {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
 }
 
 .profile-stats {
     display: flex;
-    justify-content: space-around;
-    margin: 15px 0;
-    font-size: 12px;
-}
-
-.profile-stats div {
-    text-align: center;
+    gap: 15px;
 }
 
 .profile-stats span {
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    color: #ff6699;
+    color: #388E3C;
 }
 
-.visitor-count {
-    font-size: 12px;
+.post-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 80px;
+    margin-bottom: 10px;
 }
 
-/* Main Section */
-.main-section {
-    flex: 1;
+.post-actions {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Section Styles */
-.section-header {
-    background-color: #ffccdd;
-    padding: 8px;
-    font-weight: bold;
+.post-actions button {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #555;
 }
 
-.section-subtitle {
-    font-size: 12px;
-    font-weight: normal;
+.post-actions button:hover {
+    background-color: #eee;
 }
 
-.section-content {
+.post-actions .post-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.post-actions .post-btn:hover {
+    background-color: #388E3C;
+}
+
+/* Posts */
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    background-color: white;
+    border-radius: 8px;
     padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* Guestbook */
-.guestbook {
-    border: 1px solid #ffccdd;
+.post-header {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
 }
 
-.guestbook-entry {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #ffccdd;
+.post-header img {
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-.guestbook-form textarea {
-    width: 100%;
-    height: 60px;
-    margin-bottom: 5px;
-    border: 1px solid #ffccdd;
+.post-author h4 {
+    color: #388E3C;
 }
 
-.guestbook-form button {
-    background-color: #ff6699;
-    color: white;
+.post-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.post-content {
+    margin-bottom: 15px;
+}
+
+.post-image img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.post-footer {
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.post-footer button {
+    background: none;
     border: none;
-    padding: 5px 10px;
+    color: #555;
     cursor: pointer;
-}
-
-/* Photo Section */
-.photo-section {
-    border: 1px solid #ffccdd;
-}
-
-.photo-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.photo-item {
-    height: 100px;
-    background-color: #eee;
-    border: 1px solid #ddd;
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    gap: 5px;
 }
 
-.photo-item img {
-    max-width: 100%;
-    max-height: 100%;
+.post-footer button:hover {
+    color: #388E3C;
 }
 
 /* Footer */
 .footer {
-    background-color: #ffccdd;
-    padding: 10px;
+    background-color: #388E3C;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    font-size: 12px;
-    color: #666;
+    margin-top: 30px;
 }
 
-/* Cyworld signature elements */
-.acorn {
-    color: #ff9900;
-    font-weight: bold;
+.footer-links {
+    margin-top: 10px;
 }
 
-.ilchon {
-    color: #3399ff;
-    font-weight: bold;
+.footer-links a {
+    margin: 0 10px;
+    color: #C8E6C9;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
